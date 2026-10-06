@@ -52,15 +52,15 @@ function Index() {
             <a href="#impact" className="transition-colors hover:text-primary">Our impact</a>
             <a href="#mission" className="transition-colors hover:text-primary">Mission</a>
           </nav>
-          <a href="mailto:hello@recore.tech" className="inline-flex h-11 items-center gap-2 border border-primary bg-primary px-5 text-sm font-bold text-primary-foreground transition-colors hover:bg-forest-soft">
-            Work with us <ArrowRight className="size-4" />
+          <a href="mailto:hello@recore.tech" className="inline-flex h-11 shrink-0 items-center gap-2 border border-primary bg-primary px-4 text-sm font-bold text-primary-foreground transition-colors hover:bg-forest-soft sm:px-5">
+            <span className="sm:hidden">Contact</span><span className="hidden sm:inline">Work with us</span> <ArrowRight className="size-4" />
           </a>
         </div>
       </header>
 
       <section id="top" className="relative min-h-[760px] lg:min-h-[820px]">
         <img src={serverImage} alt="A rebuilt ReCore storage server with recovered hard drives" width={1600} height={1200} className="absolute inset-0 size-full object-cover object-[68%_center]" />
-        <div className="absolute inset-0 bg-[linear-gradient(90deg,var(--paper)_0%,color-mix(in_oklab,var(--paper)_96%,transparent)_37%,color-mix(in_oklab,var(--paper)_42%,transparent)_62%,transparent_78%)]" />
+        <div className="absolute inset-0 bg-[linear-gradient(90deg,color-mix(in_oklab,var(--paper)_97%,transparent)_0%,color-mix(in_oklab,var(--paper)_90%,transparent)_62%,color-mix(in_oklab,var(--paper)_34%,transparent)_100%)] lg:bg-[linear-gradient(90deg,var(--paper)_0%,color-mix(in_oklab,var(--paper)_96%,transparent)_37%,color-mix(in_oklab,var(--paper)_42%,transparent)_62%,transparent_78%)]" />
         <div className="relative mx-auto flex min-h-[760px] max-w-7xl items-center px-6 pb-16 pt-32 lg:min-h-[820px] lg:px-10">
           <div className="recore-rise max-w-2xl">
             <p className="mb-6 flex items-center gap-3 text-xs font-bold uppercase tracking-[0.28em] text-primary"><Recycle className="size-4" /> Circular economy in action</p>
